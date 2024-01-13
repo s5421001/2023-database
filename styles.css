@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+#buttons {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+button {
+    margin: 0 10px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: none; /* データのページを最初は非表示 */
+}
+
+label, input, select {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#compatibilityBar {
+    width: 100%;
+    height: 20px;
+    background-color: #eee;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+#indicator {
+    height: 100%;
+    background-color: #3498db;
+}
+
+#compatibilityRatio {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 50%;
+    font-size: 16px;
+    color: #333;
+}
+
+#dataView {
+    max-width: 800px;
+    margin: 0 auto;
+    display: none; /* 相性の登録ページを最初は非表示 */
+}
+
+select, table {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+}

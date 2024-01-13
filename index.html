@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOL MID 相性</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>LOL MID 相性</h1>
+    
+    <div id="buttons">
+        <button id="registerCompatibilityBtn">相性の登録</button>
+        <button id="viewDataBtn">データ</button>
+    </div>
+
+    <form id="dataForm">
+        <label for="championDropdown">自分のチャンピオン:</label>
+        <select id="championDropdown" required></select>
+
+        <label for="opponentDropdown">相手のチャンピオン:</label>
+        <select id="opponentDropdown" required></select>
+
+        <label for="compatibility">相性:</label>
+        <div id="compatibilityBar">
+            <div id="indicator"></div>
+            <span id="compatibilityRatio">5:5</span>
+        </div>
+
+        <label>プッシュ:</label>
+        <input type="checkbox" id="pushCheckbox">
+
+        <label>ファーストタッチ:</label>
+        <input type="checkbox" id="firstTouchCheckbox">
+
+        <button type="submit">データを保存</button>
+    </form>
+
+    <div id="dataView">
+        <h2>追加された相性</h2>
+        
+
+        <table id="compatibilityTable">
+            <thead>
+                <tr>
+                    <th>自分のチャンピオン</th>
+                    <th>相手のチャンピオン</th>
+                    <th>相性</th>
+                    <th>プッシュ</th>
+                    <th>ファーストタッチ</th>
+                </tr>
+            </thead>
+            <tbody id="compatibilityList"></tbody>
+        </table>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
